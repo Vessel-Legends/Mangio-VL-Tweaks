@@ -2592,7 +2592,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                         maximum=10000,
                         step=1,
                         label=i18n("总训练轮数total_epoch"),
-                        value=20,
+                        value=500,
                         interactive=True,
                     )
                     batch_size12 = gr.Slider(
