@@ -2467,7 +2467,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                 sr2 = gr.Radio(
                     label=i18n("目标采样率"),
                     choices=["40k", "48k"],
-                    value="40k",
+                    value="48k",
                     interactive=True,
                 )
                 if_f0_3 = gr.Checkbox(
@@ -2478,7 +2478,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                 version19 = gr.Radio(
                     label=i18n("版本"),
                     choices=["v1", "v2"],
-                    value="v1",
+                    value="v2",
                     interactive=True,
                     visible=True,
                 )
@@ -2550,7 +2550,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                             label=i18n("crepe_hop_length"),
                             value=64,
                             interactive=True,
-                            visible=False,
+                            visible=True,
                         )
 
                         f0method8.change(
@@ -2583,7 +2583,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                         maximum=50,
                         step=1,
                         label=i18n("保存频率save_every_epoch"),
-                        value=5,
+                        value=10,
                         interactive=True,
                         visible=True,
                     )
@@ -2600,7 +2600,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                         maximum=40,
                         step=1,
                         label=i18n("每张显卡的batch_size"),
-                        value=default_batch_size,
+                        value=16,
                         interactive=True,
                     )
                     if_save_latest13 = gr.Checkbox(
