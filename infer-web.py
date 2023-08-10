@@ -1987,7 +1987,7 @@ def whethercrepeornah(radio):
 
 # Change your Gradio Theme here. 👇 👇 👇 👇 Example: " theme='HaleyCH/HaleyCH_Theme' "
 with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
-    gr.HTML("<h1> The Mangio-RVC-Fork 💻 </h1>")
+    gr.HTML("<h1> The Mangio-RVC-Fork (Changed & forked version by Vessel-Legends) 💻 </h1>")
     gr.Markdown(
         value=i18n(
             "本软件以MIT协议开源, 作者不对软件具备任何控制力, 使用软件者、传播软件导出的声音者自负全责. <br>如不认可该条款, 则不能使用或引用软件包内任何代码和文件. 详见根目录<b>使用需遵守的协议-LICENSE.txt</b>."
@@ -2067,7 +2067,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                                 "mangio-crepe-tiny",
                                 "rmvpe",
                             ],  # Fork Feature. Add Crepe-Tiny
-                            value="rmvpe",
+                            value="mangio-crepe",
                             interactive=True,
                         )
                         crepe_hop_length = gr.Slider(
@@ -2499,7 +2499,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                 with gr.Row():
                     trainset_dir4 = gr.Textbox(
                         label=i18n("输入训练文件夹路径"),
-                        value=os.path.abspath(os.getcwd()) + "\\datasets\\",
+                        value=os.path.abspath("content/dataset"),
                     )
                     spk_id5 = gr.Slider(
                         minimum=0,
@@ -2539,7 +2539,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                                 "mangio-crepe",
                                 "rmvpe",
                             ],  # Fork feature: Crepe on f0 extraction for training.
-                            value="rmvpe",
+                            value="mangio-crepe",
                             interactive=True,
                         )
 
