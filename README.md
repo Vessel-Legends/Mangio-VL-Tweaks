@@ -1,3 +1,7 @@
+# DISCLAIMER: THIS IS NOT THE OFFICIAL MANGIO-RVC-FORK REPO! THIS IS JUST A FORK TO CHANGE SOME STUFF TO MY LIKING. PLEASE CHECK OUT THE ORIGINAL REPO!
+
+---
+
 # 7/28 Changelog:
 - Undo SQL change for the sake of stability, uses csv now
 - Merging checkpoints bug has been resolved
