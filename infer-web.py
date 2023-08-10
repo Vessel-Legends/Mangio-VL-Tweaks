@@ -2499,7 +2499,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                 with gr.Row():
                     trainset_dir4 = gr.Textbox(
                         label=i18n("输入训练文件夹路径"),
-                        value="content/dataset",
+                        value="/content/dataset",
                     )
                     spk_id5 = gr.Slider(
                         minimum=0,
