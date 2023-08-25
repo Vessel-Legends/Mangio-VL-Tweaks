@@ -2472,7 +2472,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                 )
                 if_f0_3 = gr.Checkbox(
                     label="Whether the model has pitch guidance.",
-                    value=False,
+                    value=True,
                     interactive=True,
                 )
                 version19 = gr.Radio(
