@@ -2484,7 +2484,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                 )
                 np7 = gr.Slider(
                     minimum=0,
-                    maximum=config.n_cpu,
+                    maximum=6,
                     step=1,
                     label=i18n("提取音高和处理数据使用的CPU进程数"),
                     value=int(np.ceil(config.n_cpu / 1.5)),
