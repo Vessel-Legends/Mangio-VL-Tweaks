@@ -2622,13 +2622,13 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                     pretrained_G14 = gr.Textbox(
                         lines=2,
                         label=i18n("加载预训练底模G路径"),
-                        value="pretrained_v2/f0G48k.pth",
+                        value="pretrained_v2/f0Ov2Super40kG.pth",
                         interactive=True,
                     )
                     pretrained_D15 = gr.Textbox(
                         lines=2,
                         label=i18n("加载预训练底模D路径"),
-                        value="pretrained_v2/f0D48k.pth",
+                        value="pretrained_v2/f0Ov2Super40kD.pth",
                         interactive=True,
                     )
                     sr2.change(
