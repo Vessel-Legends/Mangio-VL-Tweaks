@@ -2622,13 +2622,13 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                     pretrained_G14 = gr.Textbox(
                         lines=2,
                         label=i18n("加载预训练底模G路径"),
-                        value="pretrained_v2/f0Ov2Super40kG.pth",
+                        value="pretrained_v2/f0Ov2Super32kG.pth",
                         interactive=False,
                     )
                     pretrained_D15 = gr.Textbox(
                         lines=2,
                         label=i18n("加载预训练底模D路径"),
-                        value="pretrained_v2/f0Ov2Super40kD.pth",
+                        value="pretrained_v2/f0Ov2Super32kD.pth",
                         interactive=False,
                     )
                     sr2.change(
@@ -2886,7 +2886,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Mangio-RVC-Web 💻") as app:
                     sr__ = gr.Radio(
                         label=i18n("目标采样率"),
                         choices=["32k", "40k", "48k"],
-                        value="40k",
+                        value="32k",
                         interactive=True,
                     )
                     if_f0__ = gr.Checkbox(
